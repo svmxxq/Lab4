@@ -1,0 +1,83 @@
+/* Tooltip.css */
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip {
+    position: absolute;
+    padding: 8px;
+    background-color: #e38fcc;
+    color: #fff;
+    border-radius: 4px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.tooltip:hover {
+    opacity: 1;
+}
+
+.tooltip-top {
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tooltip-right {
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+}
+
+.tooltip-bottom {
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tooltip-left {
+    top: 50%;
+    right: 100%;
+    transform: translateY(-50%);
+}
+
+.tooltip-arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.tooltip-top .tooltip-arrow {
+    bottom: -8px;
+    left: 50%;
+    margin-left: -8px;
+    border-width: 8px 8px 0;
+    border-color: #ea78cf transparent transparent transparent;
+}
+
+.tooltip-right .tooltip-arrow {
+    top: 50%;
+    left: -8px;
+    margin-top: -8px;
+    border-width: 8px 8px 8px 0;
+    border-color: transparent #ea78cf transparent transparent;
+}
+
+.tooltip-bottom .tooltip-arrow {
+    top: -8px;
+    left: 50%;
+    margin-left: -8px;
+    border-width: 0 8px 8px;
+    border-color: transparent transparent #df6cea transparent;
+}
+
+.tooltip-left .tooltip-arrow {
+    top: 50%;
+    right: -8px;
+    margin-top: -8px;
+    border-width: 8px 0 8px 8px;
+    border-color: transparent transparent transparent #df6cea;
+}
